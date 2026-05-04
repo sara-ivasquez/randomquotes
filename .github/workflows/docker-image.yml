@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag sara-ivasquez/randomquotes:latest
+      run: docker build . --file Dockerfile --tag sara1014/randomquotes:latest
       
     - name: Docker Push
-      run: docker push sara-ivasquez/randomquotes
+      run: docker push sara1014/randomquotes
